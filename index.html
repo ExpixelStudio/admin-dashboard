@@ -11,21 +11,46 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div id="page-container">
+
         <section id="header">
             <div class="nav-s1">
-                <div class="search-bar"><img src="/assets/icons/search-line.svg" alt=""><input type="text"></div>
-                <div class="user">
-                    <img class="noti" src="/assets/icons/bell.svg" alt="notiIcon">
-                    <div class="profile-pic"><img src="" alt=""></div>
-                    <h3 class="user-name">User Name</h3>
+                <div class="search-container">
+                    <img src="/assets/icons/search-line.svg" alt="">
+                    <input type="text">
                 </div>
 
+                <div class="profile-container-s1">
+                    <img class="noti" src="/assets/icons/bell.svg" alt="notiIcon">
+                    <div class="profile-pic"><img src="/assets/prof-pics/icons8-luigi.svg" alt="pfp"></div>
+                    <h4 class="user-name">Xfiles</h4>
+                </div>
             </div>
+                
+                <div class="nav-s2">
+                    <div class="profile-container-s2">
+                        <div class="profile-pic"><img src="/assets/prof-pics/icons8-luigi.svg" alt="pfp"></div>
+                        <div class="user">
+                        <p class="greet">Hi there,</p>
+                        <h3 class="user-name">Xfiles (@expixelstudio)</h3>
+                    </div>
+                    </div>
+
+                    <div class="s2-btns">
+                        <button id="new">New</button>
+                        <button id="upload">Upload</button>
+                        <button id="share">Share</button>
+                    </div>
+                </div>
+
+            
         </section>
 
         <section id="sidebar">
-            <ul id="side-nav">
+
+            <h1><img src="/assets/icons/dashboard-fill.svg" alt="">Dashboard</h1>
+
+            <ul class="side-nav">
                 <li><a href="#home"><img src="/assets/icons/home-4-fill.svg" alt="homeIcon"></a>Home</li>
                 <li><a href="#profile"><img src="/assets/icons/profile-fill.svg" alt="profileIcon"></a>Profile</li>
                 <li><a href="#messages"><img src="/assets/icons/chat-4-fill.svg" alt="msgIcon"></a>Messages</li>
@@ -35,7 +60,7 @@
                 </li>
             </ul>
 
-            <ul id="side-nav2">
+            <ul class="side-nav">
                 <li><a href="#settings"><img src="/assets/icons/settings-3-fill.svg" alt=""></a>Settings</li>
                 <li><a href="#support"><img src="/assets/icons/question-fill.svg" alt=""></a>Support</li>
                 <li><a href="#privacy"><img src="/assets/icons/shield-check-fill.svg" alt=""></a>Privacy</li>
@@ -117,7 +142,7 @@
                         <img src="/assets/icons/share-line.svg" alt="share">
                     </div>
                 </div>
-            </div> <!-- content-block1 -->
+            </div> <!-- /content-block1 -->
 
             <div class="content-block2">
                 <h2>Announcements</h2>
@@ -132,9 +157,39 @@
                         
                     <p class="title">Updated Privacy Policy</p>
                     <p>Id volutpat lacus laoreet non curabitur gravida arcu. Neque aliquam vestibulum morbi blandit cursus. Commodo nulla facilisi nullam vehicula ipsum. Et malesuada fames ac turpis egestas.</p>
+                </div> <!-- /card -->
 
-                </div>
-            </div>
+                <h2>Trending</h2>
+                <div class="card">
+                    <div class="profile">
+                        <div class="profile-pic"><img src="" alt=""></div>
+                        <h5 class="user-name">@expixelstudio</h5>
+                        <p class="proj-title">Cool Character Maker</p>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profile-pic"><img src="" alt=""></div>
+                        <h5 class="user-name">@xfiles</h5>
+                        <p class="proj-title">Idle ARPG</p>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profile-pic"><img src="" alt=""></div>
+                        <h5 class="user-name">@ninpoa</h5>
+                        <p class="proj-title">Super Cool Project</p>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profile-pic"><img src="" alt=""></div>
+                        <h5 class="user-name">@chaoszazah</h5>
+                        <p class="proj-title">Google Maps RPG</p>
+                    </div>
+
+
+                </div> <!-- /card -->
+
+                
+            </div> <!-- /content-block2 -->
         </section>
     </div>
 

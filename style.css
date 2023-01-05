@@ -1,5 +1,7 @@
  :root{
     --pfp-size:46px;
+    --clr-orange:#fb923c;
+    --clr-purple:#581c87;
 } 
 
 *{
@@ -21,12 +23,12 @@ ul li{
 
 @font-face {
     font-family: teko-regular;
-    src: url(/assets/fonts/Teko/Teko-Regular.ttf);
+    src: url(assets/fonts/Teko/Teko-Regular.ttf);
 }
 
 @font-face{
     font-family: asap;
-    src: url(/assets/fonts/heavitas/Heavitas.ttf);
+    src: url(assets/fonts/heavitas/Heavitas.ttf);
 }
 
 #page-container{
@@ -133,7 +135,7 @@ ul li{
 
 #header .nav-s2 button{
     padding:8px;
-    background-color: #fb923c;
+    background-color: var(--clr-orange);
     color:#fff;
     font-size: 1em;
     font-weight:600;
@@ -149,7 +151,7 @@ ul li{
     display: grid;
     grid-template-rows: minmax(100px , min-content) minmax(300px , min-content) minmax(200px , min-content);
     padding: 25px 25px;
-    background-color: #581c87;
+    background-color: var(--clr-purple);
     /* border: 1px solid hotpink; */
     gap:40px;
     color:#fff;
@@ -196,11 +198,12 @@ ul li{
     padding:30px 20px;
     /* outline: none; */
     border:none;
-    border-left: 10px solid orange;
+    border-left: 10px solid var(--clr-orange);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    
 }
+
+
 
 #article .content-block1 .card .title{
     font-weight: bold;
@@ -237,20 +240,20 @@ ul li{
     gap:30px;
 }
 
-#article .content-block2 .card{
+#article .content-block2 .announce-card{
     display:grid;
     padding:25px;
     gap:22px;
     border: 1px solid orange;
 }
 
-#article .content-block2 .card .section p.title{
+#article .content-block2 .announce-card .section p.title{
     color:black;
     font-size: 0.9em;
     font-weight: 600;
 }
 
-#article .content-block2 .card .section{
+#article .content-block2 .announce-card .section{
     display: grid;
     gap:10px;
     border-bottom: 1px solid lightgray;
@@ -261,13 +264,18 @@ ul li{
     /* border:1px solid goldenrod; */
 }
 
-#article .content-block2 .card .section p{
+#article .content-block2 .announce-card .section p{
     font-size: .86em;
     color: #374151;
 }
 
-#article .content-block2 .card .profile{
+
+#article .content-block2 .trend-card{
+    border:1px solid darkgreen;
+}
+
+#article .content-block2 .trend-card .profile{
     display:grid;
     grid-template-columns: auto auto;
-    grid-template-rows: repeat(auto-fit,1fr);
+    /* grid-template-rows: repeat(auto-fit,1fr); */
 }

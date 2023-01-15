@@ -21,7 +21,7 @@ body{
    
     font-family: TT Norms Pro, teko-regular,"Times New Roman", Times, serif;
     color:#fff;
-    font-size: 1.1rem;  /* 1.25rem */
+    font-size: 1.2rem;  /* 1.25rem */
     font-weight: 400;
     line-height: 1.5em;
     background-color: var(--clr-black);
@@ -30,10 +30,11 @@ body{
 #page-container{
     display:grid;
     grid-template-columns: 1fr 5fr;
-    /* gap:1px; */
-    width:100%;
-    height:100vh;
     
+    /* gap:1px; */
+   /*  width:100vw;
+    height:100%;
+     */
 }
 
 ul li{
@@ -62,9 +63,10 @@ a{
     grid-column: 2/3;
     display: grid;
     gap:25px;
+    width:100%;
     background-color:var(--card-clr);
     box-shadow: 0 7px 2px 1px rgba(0, 0, 0, 0.1);
-    padding: 15px 50px;
+    padding: 25px 50px;
     margin-bottom: 25px;
     position:sticky;
     top:0;
@@ -73,7 +75,7 @@ a{
 
 #header .nav-s1{
     display:grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 2fr 1fr;
     /* border:1px solid palevioletred; */
     align-items: center;
     
@@ -87,7 +89,7 @@ a{
     gap:10px;
     padding:0 15px;
     width: 100%;
-    height: 80%;
+    height: 100%;
     border-radius: 100px;
     border: 2px solid var(--clr-orange);
     background-color: black;
@@ -102,7 +104,7 @@ a{
     background: transparent;
     color: #fff;
 
-    font-size: large;
+    font-size: x-large;
 }
 
 #header .nav-s1 .search-container > img:nth-child(3){
@@ -126,7 +128,7 @@ a{
 
 #header .profile-container-s1 .pfp-div{
     height:var(--pfp-size);
-    width: auto;
+    /* width: auto; */
     border-radius: 100px;
     overflow:hidden ;
     border:2px solid paleturquoise;
@@ -151,7 +153,7 @@ a{
 #header .nav-s2 .profile-container-s2 {
     display: grid;
     grid-template-columns: max-content max-content;
-    gap:3%;
+    gap:20px;
     align-items: center;
     /* border:1px solid tan; */
 }
@@ -198,6 +200,7 @@ a{
     /* border: 1px solid hotpink; */
     /* gap:40px; */
     color:#fff;
+
     
 }
 
@@ -224,8 +227,6 @@ a{
 
 #sidebar .side-container .dashicon img{
     height: 47px;
-    
-    
 }
 
 #sidebar .side-container .dashicon{
@@ -255,7 +256,7 @@ a{
 }
 
 #article{
-    grid-row: 2/4;
+    /* grid-row: 2/4; */
     display: grid;
     grid-template-columns: 3fr 1fr;
     /* gap:15px; */
@@ -391,4 +392,46 @@ a{
 
 #article .content-block2 .trend-card .profile .pfp-div > img{
     height: 100%;
+}
+
+
+/* MOBILE QUERIES */
+@media only screen and (max-width : 490px){
+    #page-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #header{
+        grid-column: 1/3;
+        
+    }
+
+    .article-headers{
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #article{
+        /* grid-row: 2/3; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #article .content-block1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(auto,1fr));
+        
+    }
+
+    #sidebar{
+        grid-column: 1/2;
+        position: fixed;
+        left: -400px;
+    }
+
+    #sidebar .side-container{
+
+    }
 }

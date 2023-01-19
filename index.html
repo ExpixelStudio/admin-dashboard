@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Dash Board</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    
     <div id="page-container">
+
+        <div class="mobile-closedash"></div>
+        <div class="mobile-showdash"><img src="assets/icons/arrow-right-circle-fill.svg" alt=""></div>
 
         <section id="header">
             <div class="nav-s1">
@@ -33,6 +37,7 @@
                     <div class="user">
                         <p class="greet">Hi there,</p>
                         <h3 class="user-name">Xfiles (@expixelstudio)</h3>
+                        
                     </div>
                 </div>
 
@@ -43,6 +48,7 @@
                 </div>
             </div>
         </section>
+
 
         <section id="sidebar">
             <div class="side-container">
@@ -74,6 +80,7 @@
                 <h3>Your Projects</h3>
                 <h3>Announcements</h3>
             </div>
+
 
             <div class="content-block1">
                 <div class="card">
@@ -151,7 +158,9 @@
             </div> <!-- /content-block1 -->
 
             <div class="content-block2">
-                <!-- <h2>Announcements</h2> -->
+                
+                <div class="announce-section">
+            
                 <div class="announce-card">
                     <div class="section">
                         <p class="title">Site Maintenance</p>
@@ -172,7 +181,7 @@
                         </p>
                     </div>
                 </div> <!-- /announce card -->
-
+            </div> <!-- announce-section -->
 
                 <div class="trending-section">
                 
@@ -218,6 +227,8 @@
             </div> <!-- /content-block2 -->
         </section>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 
